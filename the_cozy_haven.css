@@ -1,0 +1,140 @@
+html, body {
+  background-color: rgba(211, 175, 175, 0.781);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(88, 32, 3);
+  text-align: center;
+  height: 100%;
+  margin: 0 0.1% 0 0.1%;
+}
+
+.img-wrap {
+  position: relative;
+  min-height: 100%;
+}
+
+.img-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url('bilder/coffee_wine_bar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-content {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(137, 50, 73);
+}
+
+nav {
+  display: block;
+  background-color: bisque;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none ;
+  position: sticky;
+  border-radius: 3px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: brown;
+  color: rgb(244, 245, 234);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+nav a:hover { background-color: rgb(240, 206, 175);}
+
+ion-icon {
+  font-size: 50px;
+  color: goldenrod;
+}
+a {text-decoration: none;}
+
+.container {  
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+ .box1 {
+   border: 2px solid gray;
+   background-color: rgb(255, 254, 254);
+   display: inline-flex;
+   float: left;
+   width: auto;
+   height: auto;
+   padding: 10px;
+   flex-direction: column;
+   margin: 2px;
+   text-align: center;
+   position: relative;
+  }
+  .box1:hover .image {
+    opacity: 0.3;
+  }
+  .box1:hover .middle {
+    opacity: 1;
+  }
+
+ .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: rgb(255, 254, 254);
+  color: darkred;
+  font-size: 10px;
+  padding: 16px 32px;
+}
+
+.container2 {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: darkred;
+}
+
+  .box2 {
+    border: 2px solid gray;
+    background-color: bisque;
+    display: flex;
+    width: 500px;
+    height: auto;
+    float:left ;
+    padding: 10px;
+    flex-direction: column;
+    margin: 2%;
+    text-align: center;
+  }

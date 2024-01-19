@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="the_cozy_haven.css">
+
+  <title>The Cozy Haven: Events</title>
+</head>
+<body>
+  <div class="img-wrap">
+    <div class="img-content">
+  <nav>
+    <a href="the_cozy_haven_index.html">Homepage</a>
+    <a href="tch_coffee.html">Coffee</a>
+    <a href="tch_wine.html">Wine</a>
+    <a href="tch_events.html">Events</a>
+    <a href="tch_about_us.html">About Us</a>
+    </nav>
+    
+  <h1 id="top">The Cozy Haven: Order Form</h1>
+    
+  <p>Please fill in this form so we can take in your order. Please note this is a pick-up only service.</p>
+    
+    <h2>Order</h2>
+    <form action="">
+ 
+    <label for="">Firstname</label><br>
+    <input type="text" name="Vorname" required> <br><br>
+  
+    <label for="">Name</label><br>
+   <input type="text" name="name" required><br><br>
+
+    <label for="">E-mail</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label for="">Invoice Adress</label><br>
+    <textarea name="Nachricht" required placeholder="Please enter your address for invoicing."></textarea><br><br>
+    
+    <label for="coffee">Which coffee product would you like to order? </label><br>
+    ​<select name="coffee" id="coffee">
+      <option value="SCHAMONG_KoelnerMelange">SCHAMONG - Blend Kölner Melange (250g) -  7,20 €</option>
+      <option value="SCHAMONG_Fiorentino">SCHAMONG - Espresso Fiorentino (250g) - 6,80 €</option>
+      <option value="SCHAMONG_Napoletano">SCHAMONG - Napoletano (250g) - 6,80 €</option>
+      <option value="SCHAMONG_AEROPRESS">AEROPRESS - 35,90 €</option>
+      <option value="none">None</option>
+    </select><br><br>
+
+    <label for="">How many packages would you like?</label><br>
+    <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output>1</output><br><br>
+
+    <label for="wine">Which wine product would you like to order? </label><br>
+    ​<select name="wine" id="wine">
+      <option value="prunelart-cazottes">Prunelart - Cazottes - 16,00 €</option>
+      <option value="cotes-catalanes-rouge-2022-majas">Cotes Catalanes - Domaine de Majas - 21,50 €</option>
+      <option value="rackham-2021-cazottes">Rackham 2021 - Cazottes - 15,00 €</option>
+      <option value="toni-p-2022-france-gonzalvez">Toni P - Gonzalvez - 22,00 €</option>
+      <option value="none">None</option>
+    </select><br><br>
+
+    <label for="">How many bottles would you like?</label><br>
+    <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output>1</output><br><br>
+
+    <input type="submit" value="Send request"> <br><br>
+
+
+<a href="#top">Jump back to top</a>
+<div><div></div></div></body>
+</html>
